@@ -1,2 +1,0 @@
-# medicare
-an android application
