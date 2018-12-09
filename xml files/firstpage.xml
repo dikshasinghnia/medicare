@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context=".firstpage">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_dark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Home"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="210dp"
+        android:layout_height="57dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/logout"
+        android:text="Welcome "
+        android:textColor="@android:color/white"
+        android:textSize="45dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#060606"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/addpatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:onClick="onButton1Click"
+        app:srcCompat="@drawable/ic_action_addpatient" />
+
+    <ImageButton
+        android:id="@+id/viewpatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/addpatient"
+        android:layout_marginStart="91dp"
+        android:onClick="onButton2Click"
+        app:srcCompat="@drawable/ic_action_viewcontacts" />
+
+    <ImageButton
+        android:id="@+id/addevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onButton4Click"
+        app:srcCompat="@drawable/ic_action_addappointment" />
+
+    <ImageButton
+        android:id="@+id/showevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="89dp"
+        android:onClick="onButton5Click"
+        app:srcCompat="@drawable/ic_action_viewappointment" />
+
+    <ImageButton
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:onClick="onButtonClick"
+        app:srcCompat="@drawable/ic_action_logout" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onButtonClick"
+        app:srcCompat="@drawable/ic_action_settings" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        android:layout_alignStart="@+id/addpatient"
+        android:layout_alignTop="@+id/toolbar3"
+        android:layout_marginStart="-3dp"
+        android:text="New patient"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/viewpatient"
+        android:layout_alignTop="@+id/toolbar3"
+        android:text="View Patient"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toolbar3"
+        android:layout_centerHorizontal="true"
+        android:text="Add Event"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/showevent"
+        android:layout_alignTop="@+id/toolbar3"
+        android:text="Show Event"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/textView3"
+        android:text="Logout"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#d3d3d3"
+    android:fillViewport="true"
+    tools:context=".viewp">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#030303"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Patient Prescription"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="OPD no."
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="126dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="FIND"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
